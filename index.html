@@ -1,1 +1,38 @@
-My GitHub Page
+---
+layout: default
+title: home
+---
+
+  <div id="introduction" class="centered">
+    <span> Hi, my name is <a href="http://blog.wolfgang-vogl.com">Wolfgang Vogl</a> and I am a webdeveloper from Salzburg (Austria). <br/>
+    At this site you will find some projects of mine. <br/>
+    On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff i'm working with...
+    </span>
+  </div>
+  
+  <div id="contact" class="centered">
+    <p>You can find me on:<br/>
+       <a href="https://github.com/wolli2710">github</a><br />
+       <a href="http://twitter.com/#!/Wolli2710">twitter</a><br />
+       <a href="https://www.xing.com/profile/Wolfgang_Vogl11">xing</a>
+    </p>
+  </div>
+
+  <div id="projects">
+    <h2 class="centered">Projects:</h2>
+    
+    {% for post in site.posts %}
+  
+    <a href="{{ post.url }}">
+      <div class="project left">
+        <div class="post-image" style="background-image: url(/images/{{post.image}}) "></div>
+          {{ Time.now }}
+          {{ post.title }} <br/>
+          {{ post.content }}
+      </div>
+    </a>
+    {% endfor %}
+
+    <div class="clr"></div>
+
+  </div>

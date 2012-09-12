@@ -1,4 +1,9 @@
+safe: true
+auto: true
 server: true
 server_port: 4003
-auto: true
-exclude: README.md, less.less, syntax.css
+
+source: .
+destination: ./_site
+lsi: false
+pygments: true

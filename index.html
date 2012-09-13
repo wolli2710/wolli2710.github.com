@@ -3,14 +3,19 @@ layout: default
 title: home
 ---
 
-  <div id="introduction" class="centered">
-    <span> Hi, my name is <a href="http://blog.wolfgang-vogl.com">Wolfgang Vogl</a> and I am a webdeveloper from Salzburg (Austria). <br/>
-    At this site you will find some projects of mine. <br/>
-    On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff i'm working with...
+  <div id="introduction">
+    <span class="first-line">Hi, my name is Wolfgang Vogl</span> <br/>
+    <span> and I am a webdeveloper from Salzburg (Austria).
+    At this site you will find some projects of mine.
+    On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff...
     </span>
   </div>
   
   <div id="contact" class="centered">
+    <p>If you have any questions drop me a line
+      <a href="mailto:wolfgang.vogl@aon.at">@mail</a>
+    </p>
+
     <p>You can find me on:<br/>
        <a href="https://github.com/wolli2710">github</a><br />
        <a href="http://twitter.com/#!/Wolli2710">twitter</a><br />
@@ -18,8 +23,8 @@ title: home
     </p>
   </div>
 
-  <div id="projects">
-    <h2 class="centered">Projects:</h2>
+  <div id="projects" class="centered">
+    <span class="first-line">Projects:</span>
     
     {% for post in site.posts %}
   

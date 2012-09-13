@@ -94,6 +94,7 @@ a:hover{
   color: #CFCFCF;
 }
 
+
 /* customized classes */
 
 .centered{
@@ -107,6 +108,17 @@ a:hover{
 .left{
   float: left;
 }
+
+/* custom variables */
+
+@regular_font_size: 1.5em;
+@regular_spacing: 4px;
+
+@w_mobile_font_size: 1.2em;
+@w_mobile_spacing: 3px;
+
+@mobile_font_size: 1.0em;
+@mobile_spacing: 2px;
 
 /*		Default Layout: 992px. 
 		Gutters: 24px.
@@ -126,7 +138,6 @@ body {
   own styles
 */
 
-
 .post-image{
   width: 100%;
   height: 100px;
@@ -139,14 +150,17 @@ body {
   margin: 0 auto;
 }
 
-#introduction{
-  font-size: 2.0em;
-  word-spacing: 4px;
+#contact, #projects{
+  margin: 30px auto;
 }
 
-#contact{
-  font-size: 1.8em;
-  word-spacing: 4px;
+#introduction > .first-line, #projects > .first-line{
+  .large;
+}
+
+#contact, #introduction{
+  font-size: @regular_font_size;
+  word-spacing: @regular_spacing;
 }
 
 .project{
@@ -181,17 +195,16 @@ px      68    160    252    344    436    528    620    712    */
     width: 712px;
     padding-left: 28px;
     padding-right: 28px;
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
-  #introduction{
-    font-size: 1.5em;
-    word-spacing: 2px;
+  #introduction > .first-line, #projects > .first-line{
+    .large;
   }
 
-  #contact{
-    font-size: 1.2em;
-    word-spacing: 4px;
+  #contact, #introduction{
+    font-size: @regular_font_size;
+    word-spacing: @regular_spacing;
   }
 
   .project{
@@ -209,7 +222,6 @@ px      68    160    252    344    436    528    620    712    */
     -moz-box-shadow:    0px 0px 5px rgba(129, 50, 50, 0.4);
     box-shadow:         0px 0px 5px rgba(129, 50, 50, 0.4);
   }
-
 }
 
 /*		Mobile Layout: 320px.
@@ -222,27 +234,20 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
 	
-	body {
-		width: 252px;
-		padding: 48px 34px 60px;
-	}
-
-
   #introduction, #contact, #projects{
-    width: 252px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin: 0 auto;
+    width: 256px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 20px auto;
   }
 
-  #introduction{
-    font-size: 1.2em;
-    word-spacing: 4px;
+  #introduction > .first-line, #projects > .first-line{
+    .big;
   }
 
-  #contact{
-    font-size: 1.0em;
-    word-spacing: 4px;
+  #contact, #introduction{
+    font-size: @mobile_font_size;
+    word-spacing: @mobile_spacing;
   }
 
   .project{
@@ -253,7 +258,6 @@ px      68    160    252    */
     -moz-box-shadow:    5px 5px 5px rgba(129, 50, 50, 0.4);
     box-shadow:         5px 5px 5px rgba(129, 50, 50, 0.4);
   }
-
 }
 
 
@@ -267,26 +271,20 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	body {
-		width: 436px;
-		padding: 36px 22px 48px;
-	}
-
   #introduction, #contact, #projects{
     width: 436px;
     padding-left: 24px;
     padding-right: 24px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
-  #introduction{
-    font-size: 1.2em;
-    word-spacing: 4px;
+  #introduction > .first-line, #projects > .first-line{
+    .bigger;
   }
 
-  #contact{
-    font-size: 1.0em;
-    word-spacing: 4px;
+  #contact, #introduction{
+    font-size: @w_mobile_font_size;
+    word-spacing: @w_mobile_spacing;
   }
 
   .project{

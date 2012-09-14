@@ -7,35 +7,41 @@ title: home
     <span class="first-line">Hi, my name is Wolfgang Vogl</span> <br/>
     <span> and I am a webdeveloper from Salzburg (Austria).
     At this site you will find some projects of mine.
-    On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff...
+    On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff about 
+    technologies like Ruby on Rails, JavaScript, NodeJS and so on.
     </span>
   </div>
   
-  <div id="contact" class="centered">
-    <p>If you have any questions drop me a line
+  <div id="contact">
+    <p>If you have any questions about me or my work, don't hesitate to write me an email
       <a href="mailto:wolfgang.vogl@aon.at">@mail</a>
     </p>
 
     <p>You can also find me on:<br/>
-       <a href="https://github.com/wolli2710">github</a><br />
-       <a href="http://twitter.com/#!/Wolli2710">twitter</a><br />
+       <a href="https://github.com/wolli2710">github</a>
+       <a href="http://twitter.com/#!/Wolli2710">twitter</a>
        <a href="https://www.xing.com/profile/Wolfgang_Vogl11">xing</a>
+       <a href="http://www.linkedin.com/pub/wolfgang-vogl/54/970/154">linkedin</a>
     </p>
   </div>
 
   <div id="projects" class="centered">
-    <span class="first-line">Projects:</span>
+    <span class="first-line">Projects:</span><br/>
     
     {% for post in site.posts %}
   
-    <a href="{{ post.url }}">
       <div class="project left">
-        <div class="post-image" style="background-image: url(/images/{{post.image}}) "></div>
-          {{ Time.now }}
-          {{ post.title }} <br/>
-          {{ post.content }}
+        <a href="{{ post.url }}">
+          <div class="post-image" style="background-image: url(/images/{{post.thumb}}) "></div>
+        </a>
+        <div class="content">
+          <p class="first-line"> {{ post.title }} <p>
+          
+          {{ post.description }} <br/>
+
+          {{ post.collaborators }}
+        </div>
       </div>
-    </a>
     {% endfor %}
 
     <div class="clr"></div>

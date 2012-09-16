@@ -31,15 +31,14 @@ title: home
     {% for post in site.posts %}
   
       <div class="project left">
-        <a href="{{ post.url }}">
-          <div class="post-image" style="background-image: url(/images/{{post.thumb}}) "></div>
-        </a>
+        <div class="post-image" style="background-image: url(/images/{{post.thumb}}) "></div>
         <div class="content">
           <p class="first-line"> {{ post.title }} <p>
           
-          {{ post.description }} <br/>
+          {{ post.description }} <br/><br/>
 
-          {{ post.collaborators }}
+          {% if post.collaborators %}<div class="collaborators">Collaborators:<br/> {{ post.collaborators }} </div> {% endif %}
+          {% if post.site_link %}| <a href="http://{{post.site_link}}">page</a> | {% endif %}
         </div>
       </div>
     {% endfor %}

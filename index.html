@@ -39,6 +39,7 @@ title: home
 
           {% if post.collaborators %}<div class="collaborators">Collaborators:<br/> {{ post.collaborators }} </div> {% endif %}
           {% if post.site_link %}| <a href="http://{{post.site_link}}">page</a> | {% endif %}
+          {% if post.code %}| <a href="http://{{post.code}}">code</a> | {% endif %}
         </div>
       </div>
     {% endfor %}

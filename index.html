@@ -8,7 +8,7 @@ title: home
     <span> and I am a webdeveloper from Salzburg (Austria).
     At this site you will find some projects of mine.
     On my <a href="http://blog.wolfgang-vogl.com">Blog</a> i post some tech stuff about 
-    technologies like Ruby on Rails, JavaScript, NodeJS and so on.
+    technologies like Ruby on Rails, JavaScript, node.js and so on.
     </span>
   </div>
   
@@ -35,7 +35,7 @@ title: home
         <div class="content">
           <p class="first-line"> {{ post.title }} <p>
           
-          {{ post.description }} <br/><br/>
+          <p class="description"> {{ post.description }} <p>
 
           {% if post.collaborators %}<div class="collaborators">Collaborators:<br/> {{ post.collaborators }} </div> {% endif %}
           {% if post.site_link %}| <a href="http://{{post.site_link}}">page</a> | {% endif %}

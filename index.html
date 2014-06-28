@@ -40,6 +40,8 @@ title: home
 
           {% if post.collaborators %}<div class="collaborators">Collaborators:<br/> {{ post.collaborators }} </div> {% endif %}
           {% if post.site_link %}| <a href="{{post.site_link}}">page</a> | {% endif %}
+          {% if post.fb_link %}| <a href="{{post.fb_link}}">facebook</a> | {% endif %}
+          {% if post.google_link %}| <a href="{{post.google_link}}">google+</a> | {% endif %}
           {% if post.code %}| <a href="{{post.code}}">code</a> | {% endif %}
         </div>
       </div>

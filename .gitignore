@@ -2,3 +2,5 @@ _site/
 styles/less.css
 *.swp
 *.swo
+.DS_Store
+

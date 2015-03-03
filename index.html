@@ -43,9 +43,45 @@ title: home
           {% if post.fb_link %}| <a href="{{post.fb_link}}">facebook</a> | {% endif %}
           {% if post.google_link %}| <a href="{{post.google_link}}">google+</a> | {% endif %}
           {% if post.code %}| <a href="{{post.code}}">code</a> | {% endif %}
+          {% if post.video %}| <a href="{{post.video}}">video</a> | {% endif %}
         </div>
       </div>
     {% endfor %}
+
+    <div class="clr"></div>
+
+  </div>
+
+
+  <div id="thesis" class="centered">
+    <span class="first-line">Scientific Work:</span><br/>
+      
+      <div class="project left">
+        <div class="post-image" style="background-image: url(/images/masterthesis.jpg) "></div>
+        <div class="content">
+          <p class="first-line"> Accuracy of sleep measurement with Android smartphones. <p>
+          
+          <p class="description"> In my master thesis I discussed the opportunities of modern Android smartphones for the measurement of human sleep. I compared and evaluated the smartphone data with the data of the laboratory for "Sleep, Cognition and Consciousness Research" from the university of Salzburg at the department of psychology. <p>
+        </div>
+      </div>
+
+      <div class="project left">
+        <div class="post-image" style="background-image: url(/images/bakk2.jpg) "></div>
+        <div class="content">
+          <p class="first-line"> Usage of databases with the Rails Framework <p>
+          
+          <p class="description"> In my second bachelor thesis I discussed the usage of the relational database MySQL compared to the document oriented database MongoDB. I built two webapplications with the same features, one with MongoDB and one with MySQL. Both of the application were built with the Rails framework.<p>
+        </div>
+      </div>
+
+      <div class="project left">
+        <div class="post-image" style="background-image: url(/images/bakk1.jpg) "></div>
+        <div class="content">
+          <p class="first-line"> NoSQL databases for community webapplications <p>
+          
+          <p class="description"> In my first bachelor thesis I discussed the usage of the wide column store (NoSQL) database Cassandra for creating community webapplications. In my thesis I used the Rails Framework and compared the Cassandra based application to a regular MySQL based application.<p>
+        </div>
+      </div>
 
     <div class="clr"></div>
 
